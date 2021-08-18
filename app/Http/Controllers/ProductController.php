@@ -221,7 +221,7 @@ class ProductController extends Controller
         $id = $request->id;
         $status = $request->status;
 
-        $check = DB::table("sales")->select('id')->where('product_id', $id)->count();
+        $check = DB::table("sales")->select('id')->whereRaw("JSON_CONTAINS(product_id, JSON_QUOTE('$id'), '$') = 1")->count();
 
         if ($check == 0) {
             $save = ProductModel::find($id);
@@ -286,7 +286,7 @@ class ProductController extends Controller
     public function delete(Request $request) {
         $id = $request->id;
 
-        $check = DB::table('sales')->select('id')->whereRaw("product_id = $id")->count();
+        $check = DB::table('sales')->select('id')->whereRaw("JSON_CONTAINS(product_id, JSON_QUOTE('$id'), '$') = 1")->count();
 
         if ($check > 0) {
             $attr['status'] = "500";
