@@ -1,0 +1,14 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/assets/js/navigate.js": "/assets/js/navigate.js",
+    "/js/jquery.js": "/js/jquery.js",
+    "/assets/js/login.js": "/assets/js/login.js",
+    "/assets/js/customer.js": "/assets/js/customer.js",
+    "/assets/js/product.js": "/assets/js/product.js",
+    "/assets/js/sales.js": "/assets/js/sales.js",
+    "/assets/js/pagination.js": "/assets/js/pagination.js",
+    "/js/sweetalert.js": "/js/sweetalert.js",
+    "/css/app.css": "/css/app.css",
+    "/assets/css/master.css": "/assets/css/master.css",
+    "/assets/css/login.css": "/assets/css/login.css"
+}

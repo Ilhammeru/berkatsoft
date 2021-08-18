@@ -1,0 +1,73 @@
+.row-login {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #113468, #006095, #008db6, #00bccb, #4bead5);
+}
+
+.card-login {
+    border-radius: 25px !important;
+    width: 25em !important;
+    padding: 1.2em;
+    height: auto;
+}
+
+.header-login {
+    text-align: center;
+    background-color: transparent !important;
+}
+
+.button-save {
+    border-radius: 25px !important;
+}
+
+input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder {
+    text-align: center;
+}
+
+input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder {
+    text-align: center;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    text-align: center;
+}
+
+input {
+    border-radius: 15px !important;
+    font-size: 0.9em !important;
+    text-align: -webkit-center !important;
+    width: 80% !important;
+    transition: all .3s !important;
+}
+
+input:focus {
+    width: 100% !important;
+}
+
+.span-forgot,
+.span-register,
+.span-login {
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: ease .2s;
+}
+
+.span-forgot:hover,
+.span-register:hover,
+.span-login:hover {
+    color: blue;
+    font-size: 0.9em;
+}
+
+.button-save {
+    width: 50%;
+    transition: all .2s !important;
+}
+
+.button-save:hover {
+    width: 80%;
+}
